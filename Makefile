@@ -24,7 +24,7 @@ golang:
 build: golang
 	@echo "--> Compiling the project"
 	@mkdir -p bin
-	go build -ldflags "${LFLAGS}" -o bin/${NAME}
+	CGO_ENABLED=0 GOOS=linux go build -ldflags "${LFLAGS}" -o bin/${NAME}
 
 static: golang deps
 	@echo "--> Compiling the static binary"

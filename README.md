@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/gambol99/keycloak-proxy.svg?branch=master)](https://travis-ci.org/gambol99/keycloak-proxy)
-[![GoDoc](http://godoc.org/github.com/gambol99/keycloak-proxy?status.png)](http://godoc.org/github.com/gambol99/keycloak-proxy)
+[![GoDoc](http://godoc.org/github.com/kublr/keycloak-proxy?status.png)](http://godoc.org/github.com/kublr/keycloak-proxy)
 [![Docker Repository on Quay](https://quay.io/repository/gambol99/keycloak-proxy/status "Docker Repository on Quay")](https://quay.io/repository/gambol99/keycloak-proxy)
 [![GitHub version](https://badge.fury.io/gh/gambol99%2Fkeycloak-proxy.svg)](https://badge.fury.io/gh/gambol99%2Fkeycloak-proxy)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gambol99/keycloak-proxy)](https://goreportcard.com/report/github.com/gambol99/keycloak-proxy)
+[![Go Report Card](https://goreportcard.com/badge/github.com/kublr/keycloak-proxy)](https://goreportcard.com/report/github.com/kublr/keycloak-proxy)
 [![Coverage Status](https://coveralls.io/repos/github/gambol99/keycloak-proxy/badge.svg?branch=master)](https://coveralls.io/github/gambol99/keycloak-proxy?branch=master)
 
 ### **Keycloak Proxy**

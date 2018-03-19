@@ -9,7 +9,7 @@ spec:
       labels:
         name: proxy
       annotations:
-        repository: https://github.com/gambol99/keycloak-proxy
+        repository: https://github.com/kublr/keycloak-proxy
     spec:
       containers:
       - name: proxy

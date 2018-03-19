@@ -1,4 +1,4 @@
-package: github.com/gambol99/keycloak-proxy
+package: github.com/kublr/keycloak-proxy
 import:
 - package: github.com/PuerkitoBio/purell
 - package: github.com/armon/go-proxyproto

@@ -1,9 +1,9 @@
 FROM alpine:3.7
 MAINTAINER Rohith Jayawardene <gambol99@gmail.com>
 LABEL Name=keycloak-proxy \
-      Release=https://github.com/gambol99/keycloak-proxy \
-      Url=https://github.com/gambol99/keycloak-proxy \
-      Help=https://github.com/gambol99/keycloak-proxy/issues
+      Release=https://github.com/kublr/keycloak-proxy \
+      Url=https://github.com/kublr/keycloak-proxy \
+      Help=https://github.com/kublr/keycloak-proxy/issues
 
 RUN apk add --no-cache ca-certificates
 

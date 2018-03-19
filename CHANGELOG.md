@@ -2,28 +2,28 @@
 #### **2.1.2 (Unreleased)**
 
 FEATURES:
-* Added a --enable-default-deny option to make denial by default [#PR320](https://github.com/gambol99/keycloak-proxy/pull/320)
-* Added metrics latency metrics for the forwarding proxy and the certificate rotation [#PR325](https://github.com/gambol99/keycloak-proxy/pull/325)
-* Added spelling check to the tests [#PR322](https://github.com/gambol99/keycloak-proxy/pull/322)
-* Added the X-Auth-Audience to the upstream headers [#PR319](https://github.com/gambol99/keycloak-proxy/pull/319)
-* Added the ability to control the timeout on the initial openid configuration from .well-known/openid-configuration [#PR315](https://github.com/gambol99/keycloak-proxy/pull/315)
-* Added the feature to customize the oauth prefix (defaults to /oauth) [#PR326](https://github.com/gambol99/keycloak-proxy/pull/326)
-* Added a `enable-logout-redirect` which redirects the /oauth/logout to the provider [#PR327](https://github.com/gambol99/keycloak-proxy/pull/327)
-* Adding additional metrics covering provider request latency, token breakdown [#PR324](https://github.com/gambol99/keycloak-proxy/pull/324)
-* Added environment variables alternatives for the forwarding username and password [#PR329]https://github.com/gambol99/keycloak-proxy/pull/329)
-* Changed the upstream-keepalive to default to true [#PR321](https://github.com/gambol99/keycloak-proxy/pull/321)
-* Updated the docker base image alpine 3.7 [#PR313](https://github.com/gambol99/keycloak-proxy/pull/313)
-* Updated to Golang version 1.10 [#PR316](https://github.com/gambol99/keycloak-proxy/pull/316)
+* Added a --enable-default-deny option to make denial by default [#PR320](https://github.com/kublr/keycloak-proxy/pull/320)
+* Added metrics latency metrics for the forwarding proxy and the certificate rotation [#PR325](https://github.com/kublr/keycloak-proxy/pull/325)
+* Added spelling check to the tests [#PR322](https://github.com/kublr/keycloak-proxy/pull/322)
+* Added the X-Auth-Audience to the upstream headers [#PR319](https://github.com/kublr/keycloak-proxy/pull/319)
+* Added the ability to control the timeout on the initial openid configuration from .well-known/openid-configuration [#PR315](https://github.com/kublr/keycloak-proxy/pull/315)
+* Added the feature to customize the oauth prefix (defaults to /oauth) [#PR326](https://github.com/kublr/keycloak-proxy/pull/326)
+* Added a `enable-logout-redirect` which redirects the /oauth/logout to the provider [#PR327](https://github.com/kublr/keycloak-proxy/pull/327)
+* Adding additional metrics covering provider request latency, token breakdown [#PR324](https://github.com/kublr/keycloak-proxy/pull/324)
+* Added environment variables alternatives for the forwarding username and password [#PR329]https://github.com/kublr/keycloak-proxy/pull/329)
+* Changed the upstream-keepalive to default to true [#PR321](https://github.com/kublr/keycloak-proxy/pull/321)
+* Updated the docker base image alpine 3.7 [#PR313](https://github.com/kublr/keycloak-proxy/pull/313)
+* Updated to Golang version 1.10 [#PR316](https://github.com/kublr/keycloak-proxy/pull/316)
 
 #### **2.1.1**
 
 FEATURES:
-* Added the groups parameter to the resource, permitting users to use the `groups` claim in the token [#PR301](https://github.com/gambol99/keycloak-proxy/pull/301)
-* Removed the authors file [#PR299](https://github.com/gambol99/keycloak-proxy/pull/299)
+* Added the groups parameter to the resource, permitting users to use the `groups` claim in the token [#PR301](https://github.com/kublr/keycloak-proxy/pull/301)
+* Removed the authors file [#PR299](https://github.com/kublr/keycloak-proxy/pull/299)
 
 FIXES:
-* Fixed the custom headers when upgrading to websockets [#PR311](https://github.com/gambol99/keycloak-proxy/pull/311)
-* Fixed exception when upgrading to websockets [#PR303](https://github.com/gambol99/keycloak-proxy/pull/303)
+* Fixed the custom headers when upgrading to websockets [#PR311](https://github.com/kublr/keycloak-proxy/pull/311)
+* Fixed exception when upgrading to websockets [#PR303](https://github.com/kublr/keycloak-proxy/pull/303)
 
 #### **2.1.0**
 
@@ -31,42 +31,42 @@ FIXES:
 * fixed the parsing of slices for command line arguments (i.e. --cors-origins etc)
 * fixed any accidental proxying on the /oauth or /debug URI
 * removed all references to the underlining web framework in tests
-* adding unit tests for proxy protocol and using the run() method [#PR214](https://github.com/gambol99/keycloak-proxy/pull/214)
-* removed unnecessary commands in the Dockerfile [#PR213](https://github.com/gambol99/keycloak-proxy/pull/213)
-* removed the unrequired testing tools [#PR210](https://github.com/gambol99/keycloak-proxy/pull/210)
-* fixed a number of linting errors highlighted by gometalinter [#PR209](https://github.com/gambol99/keycloak-proxy/pull/209)
-* added docker image instructions to the readme [#PR204](https://github.com/gambol99/keycloak-proxy/pull/204)
-* added unit tests for the debug handlers [#PR223](https://github.com/gambol99/keycloak-proxy/pull/223)
-* fixing the logout handler panic when revocation url is not set [#PR254](https://github.com/gambol99/keycloak-proxy/pull/254)
-* fixing the Host header on the forwarding proxy [#PR290](https://github.com/gambol99/keycloak-proxy/pull/290)
+* adding unit tests for proxy protocol and using the run() method [#PR214](https://github.com/kublr/keycloak-proxy/pull/214)
+* removed unnecessary commands in the Dockerfile [#PR213](https://github.com/kublr/keycloak-proxy/pull/213)
+* removed the unrequired testing tools [#PR210](https://github.com/kublr/keycloak-proxy/pull/210)
+* fixed a number of linting errors highlighted by gometalinter [#PR209](https://github.com/kublr/keycloak-proxy/pull/209)
+* added docker image instructions to the readme [#PR204](https://github.com/kublr/keycloak-proxy/pull/204)
+* added unit tests for the debug handlers [#PR223](https://github.com/kublr/keycloak-proxy/pull/223)
+* fixing the logout handler panic when revocation url is not set [#PR254](https://github.com/kublr/keycloak-proxy/pull/254)
+* fixing the Host header on the forwarding proxy [#PR290](https://github.com/kublr/keycloak-proxy/pull/290)
 
 FEATURES
 * changed the routing engine from gin to echo
 * we now normalize all inbound URI before applying the protection middleware
-* the order of the resources are no longer important, the framework will handle the routing [#PR199](https://github.com/gambol99/keycloak-proxy/pull/199)
-* improved the overall spec of the proxy by removing URL inspection and prefix checking [#PR199](https://github.com/gambol99/keycloak-proxy/pull/199)
-* removed the CORS implementation and using the default echo middles, which is more compliant [#PR199](https://github.com/gambol99/keycloak-proxy/pull/199)
-* added a warning for suspect resource urls not using wildcards [#PR206](https://github.com/gambol99/keycloak-proxy/pull/206)
-* added a build time to the version tag [#PR212](https://github.com/gambol99/keycloak-proxy/pull/212)
-* added coveralls coverage submission to the ci build [#PR215](https://github.com/gambol99/keycloak-proxy/pull/215)
-* added spelling code coverage to the ci build [#PR208](https://github.com/gambol99/keycloak-proxy/pull/208)
-* update the encryption to use aes gcm [#PR220](https://github.com/gambol99/keycloak-proxy/pull/220)
+* the order of the resources are no longer important, the framework will handle the routing [#PR199](https://github.com/kublr/keycloak-proxy/pull/199)
+* improved the overall spec of the proxy by removing URL inspection and prefix checking [#PR199](https://github.com/kublr/keycloak-proxy/pull/199)
+* removed the CORS implementation and using the default echo middles, which is more compliant [#PR199](https://github.com/kublr/keycloak-proxy/pull/199)
+* added a warning for suspect resource urls not using wildcards [#PR206](https://github.com/kublr/keycloak-proxy/pull/206)
+* added a build time to the version tag [#PR212](https://github.com/kublr/keycloak-proxy/pull/212)
+* added coveralls coverage submission to the ci build [#PR215](https://github.com/kublr/keycloak-proxy/pull/215)
+* added spelling code coverage to the ci build [#PR208](https://github.com/kublr/keycloak-proxy/pull/208)
+* update the encryption to use aes gcm [#PR220](https://github.com/kublr/keycloak-proxy/pull/220)
 * added the --enable-encrypted-token option to enable encrypting the access token:wq
-* added the --skip-client-id option to permit skipping the verification of the auduence against client in token [#PR236](https://github.com/gambol99/keycloak-proxy/pull/236)
-* updated the base image to apline 3.6 in commit [0fdebaf821](https://github.com/gambol99/keycloak-proxy/pull/236/commits/0fdebaf8215e9480896f01ec7ab2ef7caa242da1)
-* moved to use zap for the logging [#PR237](https://github.com/gambol99/keycloak-proxy/pull/237)
-* making the X-Auth-Token optional in the upstream headers via the --enable-token-header [#PR247](https://github.com/gambol99/keycloak-proxy/pull/247)
-* adding the ability to load a CA authority to provide trust on upstream endpoint [#PR248](https://github.com/gambol99/keycloak-proxy/pull/248)
-* adding the ability to set various http server and upstream timeout [#PR268](https://github.com/gambol99/keycloak-proxy/pull/268)
-* adding the `--enable-authorization-cookies` command line option to control upstream cookies [$PR287](https://github.com/gambol99/keycloak-proxy/pull/287)
+* added the --skip-client-id option to permit skipping the verification of the auduence against client in token [#PR236](https://github.com/kublr/keycloak-proxy/pull/236)
+* updated the base image to apline 3.6 in commit [0fdebaf821](https://github.com/kublr/keycloak-proxy/pull/236/commits/0fdebaf8215e9480896f01ec7ab2ef7caa242da1)
+* moved to use zap for the logging [#PR237](https://github.com/kublr/keycloak-proxy/pull/237)
+* making the X-Auth-Token optional in the upstream headers via the --enable-token-header [#PR247](https://github.com/kublr/keycloak-proxy/pull/247)
+* adding the ability to load a CA authority to provide trust on upstream endpoint [#PR248](https://github.com/kublr/keycloak-proxy/pull/248)
+* adding the ability to set various http server and upstream timeout [#PR268](https://github.com/kublr/keycloak-proxy/pull/268)
+* adding the `--enable-authorization-cookies` command line option to control upstream cookies [$PR287](https://github.com/kublr/keycloak-proxy/pull/287)
 
 BREAKING CHANGES:
 * the proxy no longer uses prefixes for resources, if you wish to use wildcard urls you need
   to specify it, i.e. --resource=/ becomes --resource=/* or =admin/ becomes =admin/* or /admin*;
-  a full set of routing details can bt found at https://echo.labstack.com/guide/routing [#PR199](https://github.com/gambol99/keycloak-proxy/pull/199)
+  a full set of routing details can bt found at https://echo.labstack.com/guide/routing [#PR199](https://github.com/kublr/keycloak-proxy/pull/199)
 * removed the --enable-cors-global option, CORS is now handled the default echo middleware
-* changed option from log-requests -> enable-logging [#PR199](https://github.com/gambol99/keycloak-proxy/pull/199)
-* changed option from json-format -> enable-json-logging [#PR199](https://github.com/gambol99/keycloak-proxy/pull/199)
+* changed option from log-requests -> enable-logging [#PR199](https://github.com/kublr/keycloak-proxy/pull/199)
+* changed option from json-format -> enable-json-logging [#PR199](https://github.com/kublr/keycloak-proxy/pull/199)
 
 MISC:
 * Switch to using a go-oidc [fork](https://github.com/gambol99/go-oidc/commit/2111f98a1397a35f1800f4c3c354a7abebbef75c) for now, until i get the various bit merged upstream
@@ -74,50 +74,50 @@ MISC:
 #### **2.0.7**
 
 FIXES:
- * Backported Fix to the proxy proxy call [767967c3](https://github.com/gambol99/keycloak-proxy/commit/767967c3499795e3141e74cace5ae3d70f27cf61)
+ * Backported Fix to the proxy proxy call [767967c3](https://github.com/kublr/keycloak-proxy/commit/767967c3499795e3141e74cace5ae3d70f27cf61)
 
 #### **2.0.6**
 
 FIXES:
- * Ensuring we abort all requests to /oauth/ [#PR205](https://github.com/gambol99/keycloak-proxy/pull/205)
+ * Ensuring we abort all requests to /oauth/ [#PR205](https://github.com/kublr/keycloak-proxy/pull/205)
 
 #### **2.0.5**
 
 FIXES:
- * We normalize all urls before the protection middleware is applied [#PR202](https://github.com/gambol99/keycloak-proxy/pull/202)
+ * We normalize all urls before the protection middleware is applied [#PR202](https://github.com/kublr/keycloak-proxy/pull/202)
 
 #### **2.0.4**
 
 FIXES:
- * Fixes a bug in authentication, which permitted double slashed url entry [#PR200](https://github.com/gambol99/keycloak-proxy/pull/200)
+ * Fixes a bug in authentication, which permitted double slashed url entry [#PR200](https://github.com/kublr/keycloak-proxy/pull/200)
 
 FEATURES:
- * Grabbing the revocation-url from the idp config if user override is not specified [#PR193](https://github.com/gambol99/keycloak-proxy/pull/193)
+ * Grabbing the revocation-url from the idp config if user override is not specified [#PR193](https://github.com/kublr/keycloak-proxy/pull/193)
 
 #### **2.0.3**
 
 FEATURES:
- * Adding the PROXY_ENCRYPTION_KEY environment varable [#PR191](https://github.com/gambol99/keycloak-proxy/pull/191)
+ * Adding the PROXY_ENCRYPTION_KEY environment varable [#PR191](https://github.com/kublr/keycloak-proxy/pull/191)
 
 #### **2.0.2**
 
 FEATURES:
- * Adding the --enable-cors-global to switch on CORs header injects into every response [#PR174](https://github.com/gambol99/keycloak-proxy/pull/174)
- * Adding the ability to reload the certificates when the change [#PR178](https://github.com/gambol99/keycloak-proxy/pull/178)
- * Removing the requirement of a redirection-url, if none is specified it will use Host header or the X-Forwarded-Host if present [#PR183](https://github.com/gambol99/keycloak-proxy/pull/183)
+ * Adding the --enable-cors-global to switch on CORs header injects into every response [#PR174](https://github.com/kublr/keycloak-proxy/pull/174)
+ * Adding the ability to reload the certificates when the change [#PR178](https://github.com/kublr/keycloak-proxy/pull/178)
+ * Removing the requirement of a redirection-url, if none is specified it will use Host header or the X-Forwarded-Host if present [#PR183](https://github.com/kublr/keycloak-proxy/pull/183)
 
 CHANGES:
- * Updated the gin dependency to latest version and removed dependency in tests for gin [#PR181](https://github.com/gambol99/keycloak-proxy/pull/181)
- * Updated to go-proxy to the latest version [#PR180](https://github.com/gambol99/keycloak-proxy/pull/180)
- * Fixed up some spelling mistakes [#PR177](https://github.com/gambol99/keycloak-proxy/pull/177)
- * Changed the CLI to use reflection of the config struct [#PR176](https://github.com/gambol99/keycloak-proxy/pull/176)
- * Updated the docker base image to alpine:3.5 [#PR184](https://github.com/gambol99/keycloak-proxy/pull/184)
- * Added a new options to control the access token duration [#PR188](https://github.com/gambol99/keycloak-proxy/pull/188)
+ * Updated the gin dependency to latest version and removed dependency in tests for gin [#PR181](https://github.com/kublr/keycloak-proxy/pull/181)
+ * Updated to go-proxy to the latest version [#PR180](https://github.com/kublr/keycloak-proxy/pull/180)
+ * Fixed up some spelling mistakes [#PR177](https://github.com/kublr/keycloak-proxy/pull/177)
+ * Changed the CLI to use reflection of the config struct [#PR176](https://github.com/kublr/keycloak-proxy/pull/176)
+ * Updated the docker base image to alpine:3.5 [#PR184](https://github.com/kublr/keycloak-proxy/pull/184)
+ * Added a new options to control the access token duration [#PR188](https://github.com/kublr/keycloak-proxy/pull/188)
 
 BUGS:
- * Fixed the time.Duration flags in the reflection code [#PR173](https://github.com/gambol99/keycloak-proxy/pull/173)
- * Fixed the environment variable type [#PR176](https://github.com/gambol99/keycloak-proxy/pull/176)
- * Fixed the refresh tokens, the access token cookie was timing out too quickly ([#PR188](https://github.com/gambol99/keycloak-proxy/pull/188)
+ * Fixed the time.Duration flags in the reflection code [#PR173](https://github.com/kublr/keycloak-proxy/pull/173)
+ * Fixed the environment variable type [#PR176](https://github.com/kublr/keycloak-proxy/pull/176)
+ * Fixed the refresh tokens, the access token cookie was timing out too quickly ([#PR188](https://github.com/kublr/keycloak-proxy/pull/188)
 
 #### **2.0.1**
 
@@ -127,16 +127,16 @@ BUGS:
 #### **2.0.0**
 
 FEATURES:
- * Adding the --skip-openid-provider-tls-verify option to bypass the TLS verification for Idp [#PR147](https://github.com/gambol99/keycloak-proxy/pull/147)
- * Added a http service to permit http -> https redirects --enable-https-redirect [#PR126](https://github.com/gambol99/keycloak-proxy/pull/162)
- * Added a pprof debug handler to support profiling the proxy, via --enable-profiling [#PR156](https://github.com/gambol99/keycloak-proxy/pull/156)
+ * Adding the --skip-openid-provider-tls-verify option to bypass the TLS verification for Idp [#PR147](https://github.com/kublr/keycloak-proxy/pull/147)
+ * Added a http service to permit http -> https redirects --enable-https-redirect [#PR126](https://github.com/kublr/keycloak-proxy/pull/162)
+ * Added a pprof debug handler to support profiling the proxy, via --enable-profiling [#PR156](https://github.com/kublr/keycloak-proxy/pull/156)
 
 FIXES:
- * Fixed the --headers and --tags command line options, had a typo on the mergeMaps method [#PR142](https://github.com/gambol99/keycloak-proxy/pull/142)
- * Cleaned up how the cli command line options are processed [#PR164](https://github.com/gambol99/keycloak-proxy/pull/164)
- * Cleaned up the option checking for forwarding proxy tls setting [#PR163](https://github.com/gambol99/keycloak-proxy/pull/163)
- * Using timeout rather than multiple attempts for discovery url [#PR153](https://github.com/gambol99/keycloak-proxy/pull/153)
- * Updated the go-oidc library with various fixes [#PR159](https://github.com/gambol99/keycloak-proxy/pull/159)
+ * Fixed the --headers and --tags command line options, had a typo on the mergeMaps method [#PR142](https://github.com/kublr/keycloak-proxy/pull/142)
+ * Cleaned up how the cli command line options are processed [#PR164](https://github.com/kublr/keycloak-proxy/pull/164)
+ * Cleaned up the option checking for forwarding proxy tls setting [#PR163](https://github.com/kublr/keycloak-proxy/pull/163)
+ * Using timeout rather than multiple attempts for discovery url [#PR153](https://github.com/kublr/keycloak-proxy/pull/153)
+ * Updated the go-oidc library with various fixes [#PR159](https://github.com/kublr/keycloak-proxy/pull/159)
 
 BREAKING CHANGES:
  * The login handler by default has been switched off, you must enable for --enable-login-handler [#PR]()
